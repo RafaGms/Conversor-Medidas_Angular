@@ -1,0 +1,55 @@
+<div
+  class="container-conversor position-absolute top-50 start-50 translate-middle w-100 d-md-flex vh-100 align-items-md-center justify-content-md-center">
+  <div class="content">
+  <div class="row ">
+      <!-- Primeira parte do col-6 -->
+      <div class="col-12 col-md-6 divisao align-self-center">
+        <div class="col-12">
+          <h1 class="fw-bold fs-1 text-center animation mb-5"> Conversor</h1>
+          <p class="text-center text-danger mb-2 ">{{mensagemError}}</p>
+        </div>
+        <div class="col-12">
+          <div class="input-group mb-4">
+            <div ngbDropdown class="d-inline-block">
+              <select class="form-select" aria-label="Default select example" [(ngModel)]="selectedOption1">
+                <option selected Disabled>Medidas</option>
+                <option value="1">Metro</option>
+                <option value="2">Quilometros</option>
+                <option value="3">Centimetros</option>
+              </select>
+            </div>
+            <input type="number" class="form-control p-3" aria-label="Text input with dropdown button "
+              [(ngModel)]="primeiroNumero" (keyup)="verificacao1()" placeholder="0">
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="input-group mb-4">
+            <div ngbDropdown class="d-inline-block">
+              <select class="form-select" aria-label="Default select example" [(ngModel)]="selectedOption2">
+                <option selected Disabled>Medidas</option>
+                <option value="1">Metro</option>
+                <option value="2">Quilometro</option>
+                <option value="3">Centimetros</option>
+              </select>
+            </div>
+            <input type="number" class="form-control p-3" aria-label="Text input with dropdown button "
+              [(ngModel)]="segundoNumero" (keyup)="verificacao2()" placeholder="0">
+          </div>
+        </div>
+      </div>
+
+      <!-- Segunda parte do col-6 -->
+
+
+
+      <div class="col-6 d-none d-md-block content-img">
+        <img  src="./assets/Nerd-amico.png " alt="">
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>
