@@ -96,7 +96,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "/nomeDoRepositorioGit/"
+            "baseHref": "/Conversor-Medidas_Angular/"
             }
         }
       }

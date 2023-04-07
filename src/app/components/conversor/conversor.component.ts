@@ -83,4 +83,8 @@ export class ConversorComponent {
   setMesagemError(mensagem: string) {
     this.mensagemError = mensagem;
   }
+
+  limpar(){
+    this.mensagemError = '';
+  }
 }

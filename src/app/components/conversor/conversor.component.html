@@ -11,7 +11,7 @@
         <div class="col-12">
           <div class="input-group mb-4">
             <div ngbDropdown class="d-inline-block">
-              <select class="form-select" aria-label="Default select example" [(ngModel)]="selectedOption1">
+              <select class="form-select" aria-label="Default select example" [(ngModel)]="selectedOption1" (click)="limpar()">
                 <option selected Disabled>Medidas</option>
                 <option value="1">Metro</option>
                 <option value="2">Quilometros</option>
@@ -26,7 +26,7 @@
         <div class="col-12">
           <div class="input-group mb-4">
             <div ngbDropdown class="d-inline-block">
-              <select class="form-select" aria-label="Default select example" [(ngModel)]="selectedOption2">
+              <select class="form-select" aria-label="Default select example" [(ngModel)]="selectedOption2" (click)="limpar()">
                 <option selected Disabled>Medidas</option>
                 <option value="1">Metro</option>
                 <option value="2">Quilometro</option>
